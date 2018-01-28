@@ -5,11 +5,14 @@
  */
 package app.io;
 
+import app.dto.UserDTO;
+import java.util.List;
+
 /**
  *
  * @author Carlos
  */
-public interface DAO {
-    public void openConnection();
-    public void closeConnection();
+public interface UserInterface {
+    public void createUser(UserDTO user);
+    public List<UserDTO> getUsers();
 }
